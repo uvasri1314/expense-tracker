@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker - Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body class="settings">
+  <header>
+    <h1>Expense Tracker</h1>
+    <nav>
+      <a href="index.html">Home</a>`
+      <a href="add.html">Add Expense</a>
+      <a href="view.html">View Expenses</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Settings</h2>
+    <form id="settingsForm">
+      <h3>General Settings</h3>
+      <label>
+        <input type="checkbox" name="option1" id="option1">
+        Option 1
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="option2" id="option2">
+        Option 2
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="option3" id="option3">
+        Option 3
+      </label>
+      <br>
+
+      <h3>Appearance Settings</h3>
+      <label>
+        Dark Mode:
+        <input type="checkbox" name="darkMode" id="darkMode">
+      </label>
+      <br>
+      <label>
+        Font Size:
+        <input type="range" name="fontSize" id="fontSize" min="12" max="24" step="2">
+      </label>
+      <br>
+
+      <h3>Notification Settings</h3>
+      <label>
+        Enable Notifications:
+        <input type="checkbox" name="enableNotifications" id="enableNotifications">
+      </label>
+      <br>
+      <label>
+        Notification Sound:
+        <select name="notificationSound" id="notificationSound">
+          <option value="default">Default</option>
+          <option value="sound1">Sound 1</option>
+          <option value="sound2">Sound 2</option>
+        </select>
+      </label>
+      <br>
+
+      <button type="submit">Save Settings</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Developed by uvasri . All rights reserved.</p>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+</html>
